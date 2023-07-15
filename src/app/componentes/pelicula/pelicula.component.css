@@ -1,0 +1,76 @@
+.contenido {
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.pelicula {
+    position: relative;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pelicula .informacion {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.imagen img {
+    width: 220px;
+}
+
+.pelicula a {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: aquamarine;
+}
+
+#puntuacion {
+    bottom: 10px;
+    right: 10px;
+    position: absolute;
+    font-size: 30px;
+}
+
+.pelicula h2 {
+    text-align: center;
+    width: 80%;
+    font-size: 20px;
+}
+
+.descripcion {
+    width: 1000px;
+    height: auto;
+}
+
+.elementos {
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.elementos h3 {
+    font-size: 30px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.boton {
+    width: 1000px;
+}
+
+.boton button {
+    cursor: pointer;
+}

@@ -1,0 +1,25 @@
+<div class="contenido">
+
+    <h1>PELÍCULAS</h1>
+
+    <div class="buscador">
+        <input type="text" placeholder="Ingrese el nombre de la película" [(ngModel)]="nombre_pelicula">
+        <button (click)="obtenerPeliculas()">Enviar</button>
+    </div>
+
+    <div class="peliculas">
+        <div class="error" *ngIf="error">
+            <p>{{error}}</p>
+        </div>
+        <div class="pelicula" *ngFor="let pelicula of peliculas">
+            <div class="titulo">
+                <h2>{{pelicula.Title}}</h2>
+            </div>
+            <img [src]="pelicula.Poster" alt="pelicula.Title">
+            <p>{{pelicula.Year}}</p>
+            <a href="#">{{pelicula.Type}}</a>
+            <button (click)="verPelicula(pelicula.imdbID)">Ver película</button>
+        </div>
+    </div>
+
+</div>
